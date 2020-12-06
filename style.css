@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fs-city: 0.75rem;
+  --fs-labels: 0.5rem;
+  --c-neutral: hsl(0, 0%, 59%);
+  --c-neutral-light: hsl(0, 0%, 91%);
+  --c-background: hsl(185, 75%, 39%);
+  --c-font: hsl(229, 23%, 23%);
+  --c-font-light: hsl(227, 10%, 46%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  background-image: url("./images/bg-pattern-top.svg"), url("./images/bg-pattern-bottom.svg");
+  background-position: calc(0.48 * 100vw - 580px) calc(0% - 20em), calc(0.48 * 100vw - 25px) calc(100% + 18em);
+  background-repeat: no-repeat;
+  background-size: 35em;
+  background-blend-mode: soft-light;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  font-weight: var(--fw-bold);
+  background-color: var(--c-background);
+  color: var(--c-font);
+}
+
+.light {
+  font-weight: var(--fw-regular);
+  color: var(--c-font-light);
+}
+
+main {
+  width: 18em;
+  height: 20.8em;
+  overflow: hidden;
+  border-radius: 1em;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px var(--c-neutral);
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 15.8em;
+}
+
+.header {
+  width: 100%;
+  height: 7.7em;
+  background-image: url("./images/bg-pattern-card.svg");
+}
+
+.photo {
+  --pic-size: 96px;
+  --border-width: 5px;
+  position: absolute;
+  top: calc(50% - var(--pic-size) / 2 - var(--border-width));
+  left: calc(50% - var(--pic-size) / 2 - var(--border-width));
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: var(--border-width) solid #fff;
+  border-radius: 100%;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  margin-top: 4em;
+  align-items: center;
+  justify-content: center;
+}
+
+.about p:not(:first-child) {
+  margin-top: 0.75em;
+  font-size: 0.9rem;
+}
+
+.social-media {
+  border-top: 1px solid var(--c-neutral-light);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5em 2.5em;
+}
+
+.social p {
+  text-align: center;
+}
+
+.social p:not(:first-child) {
+  margin-top: 0.5em;
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+}
+
+/*
+ * Predefined styles for footer
+ */
+.attribution {
+  position: fixed;
+  bottom: 1em;
+  margin-top: 2em;
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */
