@@ -17,4 +17,5 @@ app.get('/images/:filename', (req, res) => {
   res.sendFile(req.params.filename, { root: path.resolve(root, 'images') });
 });
 
-app.listen(5003, () => console.log('Server started at port 5003.'));
+var port = process.env.PORT || 3000;
+app.listen(port, () => console.log('Server started at port ' + port));
