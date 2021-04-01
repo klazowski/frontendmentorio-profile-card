@@ -1,0 +1,17 @@
+{
+  "name": "frontendmentorio-profile-card",
+  "version": "1.0.0",
+  "description": "FrontendMentor.io profile card challenge",
+  "main": "index.js",
+  "repository": "https://github.com/klazowski/frontendmentorio-profile-card.git",
+  "author": "klazowski <klazowski+gitub@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false yarn install"
+  }
+}
